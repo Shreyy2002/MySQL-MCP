@@ -10,9 +10,9 @@ This repository contains an implementation of a Site Reliability Engineering (SR
 
 ```text
 +--------------+       +---------------+       +-----------------+
-|              |       |               |       |                 |
-|  MCP Client  |<----->|  MCP Server   |<----->|  FastAPI Layer  |<-----> MySQL DB
-|  (e.g. IDE)  |       |  (Python)     | API   |  (Python)       |
+| Streamlit UI |       |               |       |                 |
+| (MCP Client) |<----->|  MCP Server   |<----->|  FastAPI Layer  |<-----> MySQL DB
+|  (Python)    |       |  (Python)     | API   |  (Python)       |
 |              |       |               | Key   |                 |
 +--------------+       +---------------+       +-----------------+
 ```
@@ -61,6 +61,21 @@ mcp dev server.py
 Or to run it directly:
 ```bash
 python server.py
+```
+
+### 4. Streamlit UI (Chatbot)
+
+Install dependencies:
+```bash
+cd ui
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+Run the web application:
+```bash
+streamlit run app.py
 ```
 
 ## Security Best Practices Implemented

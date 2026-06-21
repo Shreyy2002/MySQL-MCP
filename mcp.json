@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "sre-mysql": {
+      "command": "/home/shreytyagi/Documents/mcp-demo/mcp_server/start_server.sh",
+      "args": [],
+      "env": {
+        "API_BASE_URL": "http://localhost:8000",
+        "API_KEY": "sre-secret-key-12345"
+      }
+    }
+  }
+}
