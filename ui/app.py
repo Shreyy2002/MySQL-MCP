@@ -5,6 +5,10 @@ import os
 from openai import OpenAI
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
+from dotenv import load_dotenv
+
+# Load .env file from the root directory
+load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env'))
 
 # ==========================================
 # 1. SETUP LLM CLIENT
